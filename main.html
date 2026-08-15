@@ -157,6 +157,31 @@
       line-height:2;
       color:#DCCCAC;
     }
+    
+    .scroll-indicator{
+    position:absolute;
+    bottom:35px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:5;
+    text-align:center;
+    color:white;
+    cursor:pointer;
+    user-select:none;
+}
+
+.scroll-indicator p{
+    font-size:24px;
+    letter-spacing:2px;
+    margin-bottom:10px;
+    font-weight:300;
+}
+
+.arrow{
+    width:32px;
+    height:32px;
+    animation:bounce 1.8s infinite;
+}
 
     /* ================= COUNTDOWN ================= */
 
@@ -437,8 +462,31 @@
   Saturday • September 5th 2026 <br>
   7:30 PM
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="scroll-indicator" onclick="scrollToNext()">
+
+        <p>Scroll Down</p>
+
+        <svg class="arrow" viewBox="0 0 24 24" fill="none">
+            <path
+                d="M6 9L12 15L18 9"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
 
     </div>
+
+    </div>
+
+    
 
   </section>
 
